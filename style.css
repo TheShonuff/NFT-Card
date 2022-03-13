@@ -1,68 +1,131 @@
 body {
-    background-color: hsl(217, 54%, 11%) ; 
+  background-color: hsl(217, 54%, 11%);
 }
-.left{
-    flex: 1  auto;
+.left {
+  flex: 1 auto;
 }
-.right{
-    flex: 1  auto;
+.right {
+  flex: 1 auto;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .card {
-    background-color: hsl(216, 50%, 16%);
-    border-radius: 3%;
-    height: 600px;
-    width:300px;
-
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 3%;
+  height: 600px;
+  width: 350px;
+  margin-top: 11%;
 }
 
-.card img {
-    position: inherit;
-    padding-top: 20px;
-    padding-left: 20px;
-    height: 300px;
-    width:260px;
-    align-content: center;
+.cardContent {
+  display: flex;
+  flex-flow: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.card .mainImage {
+  align-content: center;
+  border-radius: 3%;
 }
 
 h1 {
-    color: hsl(0, 0%, 100%);
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    padding-left: 20px;
-    
+  color: hsl(0, 0%, 100%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
 }
 
 p {
-    color: hsl(215, 51%, 70%);
-    font-family: 'Outfit', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    padding-left: 20px;
-    padding-right: 20px;
+  color: hsl(215, 51%, 70%);
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 0;
+  line-height: 28px;
+}
+
+.cardData {
+  display: flex;
+  flex-flow: row;
+  padding-top: 6px;
+  padding-bottom: 20px;
+}
+.priceData {
+  height: 16px;
+  width: 100px;
 }
 
 .price {
-    display: inline;
-    font-family: 'Outfit', sans-serif;
-    color: hsl(178, 100%, 50%);
-    font-size: 12px;
-    font-weight: 600;
-    padding-left: 20px;
+  font-family: "Outfit", sans-serif;
+  color: hsl(178, 100%, 50%);
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 4px;
+  padding-top: 1px;
 }
 
+.spacer {
+  width: 112px;
+}
+.timeData {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  height: 20px;
+  width: auto;
+}
 .timeLeft {
-    font-family: 'Outfit', sans-serif;
-    font-size: 12px;
-    color: hsl(215, 51%, 70%);
-    padding-right:20px;
-    text-align: right;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: hsl(215, 51%, 70%);
 
+  padding-left: 5px;
+}
+
+.line {
+  width: 100%;
+  border-bottom: 1px solid hsl(215, 51%, 70%, 20%);
+  padding-top: 10px;
+  margin-bottom: 18px;
+}
+.creatorInfo {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 30px;
+  width: 300px;
+}
+
+.creatorInfo img {
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.creatorText {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  padding-left: 12px;
+}
+
+.nameHighlight {
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  padding-top: 40px;
+  color: aliceblue;
+  font-size: 12px;
+  text-align: center;
+}
+
+a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  cursor: pointer;
 }

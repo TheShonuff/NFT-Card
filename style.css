@@ -30,11 +30,51 @@ body {
   padding-top: 20px;
 }
 
+.ImageContainer {
+  position: relative;
+  align-content: center;
+  height: 310px;
+  width: 310px;
+  margin: 0;
+}
+
 .mainImage {
   align-content: center;
   border-radius: 3%;
   height: 310px;
   width: 310px;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  opacity: 1;
+}
+
+.hiddenImageIcon {
+  position: absolute;
+  visibility: hidden;
+  transition: 0.5s ease;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ColorOverlay {
+  transition: 0.5s ease;
+  opacity: 0.5;
+  visibility: hidden;
+  position: absolute;
+  border-radius: 3%;
+  background-color: hsl(178, 100%, 50%);
+  height: 310px;
+  width: 310px;
+}
+
+.ImageContainer:hover .ColorOverlay {
+  cursor: pointer;
+  visibility: visible;
+}
+
+.ImageContainer:hover .hiddenImageIcon {
+  visibility: visible;
 }
 
 h1 {
@@ -42,6 +82,10 @@ h1 {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
   font-size: 22px;
+}
+h1:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
 }
 
 p {
@@ -117,6 +161,11 @@ p {
 
 .nameHighlight {
   color: hsl(0, 0%, 100%);
+}
+
+.nameHighlight:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
 }
 
 .attribution {
